@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aquamarine;
+}
+.container{
+    width: 100%;
+    
+}
+.ball {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    animation: mymove 5s infinite;
+    transition-timing-function: ease-out;
+    transition: width 2s height 2s transform 2s;
+    box-shadow: 8px 8px 8px white;
+    
+}
+
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 200px, 0);
+    }
+    
+  }
+
